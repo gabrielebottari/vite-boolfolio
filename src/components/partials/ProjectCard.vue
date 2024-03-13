@@ -19,11 +19,9 @@ export default {
     <img v-if="project.image" :src="projectImageSrc" :alt="`Immagine di ${project.title}`" class="card-img-top">
     <div class="card-body m-2">
         <h5 class="card-title">{{ project.title }}</h5>
-        <p>Type: {{ project.type.name }}</p>
+        <p><span class="fw-semibold">Type: </span>{{ project.type.name }}</p>
         <h6>Tecnologie:</h6>
-        <ul>
-        <li v-for="tech in project.technologies" :key="tech.id">{{ tech.name }}</li>
-        </ul>
+        <span class="badge text-bg-primary m-1" v-for="tech in project.technologies" :key="tech.id">{{ tech.name }}</span>
         <p class="card-text">{{ project.description }}</p>
         <p class="card-text"><small class="text-muted">{{ project.date }}</small></p>
     </div>
