@@ -1,13 +1,6 @@
 <script>
 export default {
-    data() {
-        return {
-
-        };
-    },
-    methods: {
-
-    }
+    name: "AppHeader",
 }
 </script>
 
@@ -22,10 +15,10 @@ export default {
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Dashboard <i class="fa-solid fa-table-columns"></i></a>
+                                <a class="nav-link" href="/">Dashboard <i class="fa-solid fa-table-columns"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Progetti <i class="fa-solid fa-diagram-project"></i></a>
+                                <a class="nav-link" href="/projects">Progetti <i class="fa-solid fa-diagram-project"></i></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Nuovo Progetto <i class="fa-solid fa-plus"></i></a>
@@ -38,8 +31,6 @@ export default {
                             </li>
                         </ul>
                         <form method="POST" action="#">
-                            @csrf
-
                             <button type="submit" class="btn btn-outline-primary">
                                 Log Out <i class="fa-solid fa-right-from-bracket"></i>
                             </button>

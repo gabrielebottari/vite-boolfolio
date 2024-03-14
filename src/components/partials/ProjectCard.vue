@@ -1,8 +1,14 @@
 <script>
+
 export default {
   name: 'ProjectCard',
   props: {
     project: Object,
+  },
+  methods: {
+  goToProjectDetails(slug) {
+    this.$router.push({ name: 'project-detail', params: { slug } });
+    }
   },
   computed: {
     projectImageSrc() {
@@ -14,7 +20,7 @@ export default {
 </script>
 
 <template>
-<div class="col-md-4 p-3">
+<div class="col-md-4 p-3"  @click="goToProjectDetails(project.slug)" >
   <div class="card mb-3">
     <img v-if="project.image" :src="projectImageSrc" :alt="`Immagine di ${project.title}`" class="card-img-top">
     <div class="card-body m-2">
