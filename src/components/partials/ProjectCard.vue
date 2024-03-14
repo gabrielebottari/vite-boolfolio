@@ -48,12 +48,12 @@ export default {
             }
         
             &::-webkit-scrollbar-thumb {
-                background: darken($color: #aaa, $amount: 20%);
+                background: gray;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-track {
-                background: lighten($color: #aaa, $amount: 20%);
+                background: darkgray;
             }
         
         }
