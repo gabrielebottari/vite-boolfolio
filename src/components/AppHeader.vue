@@ -29,6 +29,9 @@ export default {
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Tecnologie <i class="fa-solid fa-microchip"></i></a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contacts">Contatti <i class="fa-solid fa-address-book"></i></a>
+                            </li>
                         </ul>
                         <form method="POST" action="#">
                             <button type="submit" class="btn btn-outline-primary">
